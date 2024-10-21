@@ -1,9 +1,9 @@
 import json
-from stats_functions import calculate_monthly_salary, salary_statistics
+from stats_functions import *
 
 
 # Charge les entreprises à partir du fichier JSON
-with open('employes_data_test.json', 'r') as f:
+with open('data/employes_data_test.json', 'r') as f:
     enterprises = json.load(f)
 
 for enterprise in enterprises.keys():

@@ -30,7 +30,7 @@ def calculate_monthly_salary(employees: list[dict]) -> list[tuple]:
             overtime_hours = weekly_hours_worked - contract_hours
             weekly_salary = (contract_hours * hourly_rate) + (overtime_hours * hourly_rate * OVERTIME_RATE)
             
-        # Si l'employé a fait moins d'heures que son contrat
+        # Si l'employé a fait moins d'heures que son contrat mais que l'on paye quand même ses heures de contrat
         elif weekly_hours_worked < contract_hours:
             weekly_salary = contract_hours * hourly_rate
 
